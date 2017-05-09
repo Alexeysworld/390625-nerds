@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <form action="form.php" method="GET">
+    <header class="main-header">
+      <div class="wrapper clearfix">
+        <span class="main-logo"><img src="img/index-logo.png" alt="log"></span>
+        <nav class="main-menu">
+          <ul>
+            <li><a href="#">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <ul>
+            <li><a href="#" class="cart">Корзина</a></li>
+          </ul>
+        </nav>
+        <h1 class="main-name">Магазин готовых шаблонов</h1>
+      </div>
+    </header>
+    <main class="catalog-page clearfix">
+      <div class="filter">
+        <fieldset class="range-filter">
+          <legend class="heading">Стоимость:</legend>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar" style="margin-left: 20%; width: 30%"></div>
+            </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+          </div>
+          <div class="price-controls">
+            <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+            <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+          </div>
+        </fieldset>
+        <fieldset class="net">
+          <legend class="heading">Сетка:</legend>
+          <input type="radio" id="r1" name="filter" value="adap" checked>
+          <label for="r1">Адаптивная</label>
+          <input type="radio" id="r2" name="filter" value="fix">
+          <label for="r2">Фиксированная</label>
+          <input type="radio" id="r3" name="filter" value="gum">
+          <label for="r3">Резиновая</label>
+
+        </fieldset>
+        <fieldset class="feature">
+          <legend class="heading">Особенности:</legend>
+          <input type="checkbox" id="c1" name="checkbox-1" value="slider" checked>
+          <label for="c1">Слайдер</label>
+          <input type="checkbox" id="c2" name="checkbox-2" value="advantage">
+          <label for="c2">Блок преимуществ</label>
+          <input type="checkbox" id="c3" name="checkbox-3" value="news" checked>
+          <label for="c3">Новости</label>
+          <input type="checkbox" id="c4" name="checkbox-4" value="gallary">
+          <label for="c4">Галерея</label>
+          <input type="checkbox" id="c5" name="checkbox-5" value="cart">
+          <label for="c5">Корзина</label>
+        </fieldset>
+        <button type="submit">Показать</button>
+      </div>
+      <div class="content">
+        <div class="sorting">
+          <b class="heading">Сортировать:</b>
+          <a class="checked" href="#">По цене</a>
+          <a href="#">По типу</a>
+          <a href="#">По названию</a>
+          <a href="#" class="down-btn"></a>
+          <a href="#" class="up-btn"></a>
+        </div>
+        <div class="item-catalog">
+          <article class="item-card">
+            <img src="img/sedona.jpg" width="360" height="616" alt="селфи палка-1">
+            <div class="item-name">
+              <a href="#">
+                <h2 class="heading">Sedona</h2>
+              </a>
+              <p>Информационный сайт для туристов</p>
+              <button class="price" type="submit">9 900 Руб.</button>
+            </div>
+          </article>
+          <article class="item-card">
+            <img src="img/pink.jpg" width="360" height="616" alt="селфи палка-1">
+            <div class="item-name">
+              <a href="#">
+                <h2 class="heading">Sedona</h2>
+              </a>
+              <p>Информационный сайт для туристов</p>
+              <button class="price" type="submit">9 900 Руб.</button>
+            </div>
+          </article>
+          <article class="item-card">
+            <img src="img/barbershop.jpg" width="360" height="616" alt="селфи палка-1">
+            <div class="item-name">
+              <a href="#">
+                <h2 class="heading">Sedona</h2>
+              </a>
+              <p>Информационный сайт для туристов</p>
+              <button class="price" type="submit">9 900 Руб.</button>
+            </div>
+          </article>
+          <article class="item-card">
+            <img src="img/mishka.jpg" width="360" height="616" alt="селфи палка-1">
+            <div class="item-name">
+              <a href="#">
+                <h2 class="heading">Sedona</h2>
+              </a>
+              <p>Информационный сайт для туристов</p>
+              <button class="price" type="submit">9 900 Руб.</button>
+            </div>
+          </article>
+          <article class="item-card">
+            <img src="img/aplus.jpg" width="360" height="616" alt="селфи палка-1">
+            <div class="item-name">
+              <a href="#">
+                <h2 class="heading">Sedona</h2>
+              </a>
+              <p>Информационный сайт для туристов</p>
+              <button class="price" type="submit">9 900 Руб.</button>
+            </div>
+          </article>
+          <article class="item-card">
+            <img src="img/kvast.jpg" width="360" height="616" alt="селфи палка-1">
+            <div class="item-name">
+              <a href="#">
+                <h2 class="heading">Sedona</h2>
+              </a>
+              <p>Информационный сайт для туристов</p>
+              <button class="price" type="submit">9 900 Руб.</button>
+            </div>
+          </article>
+        </div>
+        <div class="paginator">
+          <a class="select">1</a>
+          <a href="#2">2</a>
+          <a href="#3">3</a>
+          <a class="next" href="#next">Следующая</a>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="map"></div>
+      <div class="contacts">
+        <b>NЁRDS DESIGN STUDIO</b>
+        <p>191186, Санкт-Петербург,</br> ул. Б. Конюшенная, д. 19/8</p>
+        <a href="+78122757575" class="tel">тел. +7 (812) 275-75-75</a>
+        <a href="#" class="write-us">Напишите нам</a>
+      </div>
+      <div class="wrapper clearfix">
+        <section class="social">
+          <a href="#" class="social-btn vk">vk</a>
+          <a href="#" class="social-btn fb">facebook</a>
+          <a href="#" class="social-btn insta">instagram</a>
+        </section>
+        <section class="discount clearfix">
+          <b>Давайте дружить, это выгодно!</b>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </section>
+      </div>
+    </footer>
+  </form>
+</body>
+
+</html>

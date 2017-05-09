@@ -1,12 +1,164 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
 
-  </body>
+<body>
+  <header class="main-header">
+    <div class="wrapper clearfix">
+      <span class="main-logo"><img src="img/index-logo.png" alt="log"></span>
+      <nav class="main-menu">
+        <ul>
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <ul>
+          <li><a href="#" class="cart">Корзина</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="slider">
+      <input type="radio" id="btn-1" name="toggle" checked>
+      <input type="radio" id="btn-2" name="toggle">
+      <input type="radio" id="btn-3" name="toggle">
+      <div class="slider-controls">
+        <label for="btn-1"></label>
+        <label for="btn-2"></label>
+        <label for="btn-3"></label>
+      </div>
+      <div class="slides">
+        <div class="slide">
+          <div class="slide-text">
+            <div class="slide-title">Долго, дорого, скрупулезно</div>
+            <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+            <a class="btn" href="#">Узнать больше</a>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-text">
+            <div class="slide-title">Любим математику как никто другой</div>
+            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
+            <a class="btn" href="#">Узнать больше</a>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-text">
+            <div class="slide-title">Только ночь, только хардкор</div>
+            <p>Работаем днем, как все? Мы против этого. Ближе к полуночи работа только начинается</p>
+            <a class="btn" href="#">Узнать больше</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="service clearfix">
+        <div class="service-item">
+          <img src="img/picture-1.png" width="300" height="146" alt="Создание сайтов">
+          <h2 class="service-title">Веб-сайты</h2>
+          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <a class="service-btn red">Заказать</a>
+        </div>
+        <div class="service-item">
+          <img src="img/picture-2.png" width="300" height="146" alt="Создание приложений">
+          <h2 class="service-title">Приложения</h2>
+          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+          <a class="service-btn green">Заказать</a>
+        </div>
+        <div class="service-item">
+          <img src="img/picture-3.png" width="300" height="146" alt="Создание презентаций">
+          <h2 class="service-title">Презентации</h2>
+          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+          <a class="service-btn yellow">Заказать</a>
+        </div>
+      </div>
+      <div class="about-line"></div>
+      <div class="about clearfix">
+        <div class="left-column">
+          <h2>Мы — маленькая, но гордая дизайн-студия из Краснодара. </h2>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <b>Выполняем заказы на разработку:</b>
+          <ul>
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+        <div class="right-column">
+          <b>С 2004 года любим точность во всем:</b>
+          <div class="percent-block">
+            <div class="percent-block-item">
+              <span class="number">146</span>
+              <span class="percent-icon">%</span>
+              <span class="percent-description">Уровень самоотдачи</span>
+            </div>
+            <div class="percent-block-item">
+              <span class="number">100</span>
+              <span class="percent-icon">%</span>
+              <span class="percent-description">Соблюдение сроков</span>
+            </div>
+            <div class="percent-block-item">
+              <span class="number">50</span>
+              <span class="percent-icon">%</span>
+              <span class="percent-description">Минимальная предоплата</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="brands-line"></div>
+      <div class="brands clearfix">
+        <a href="#"><img src="img/logo-1.png" alt="a"></a>
+        <a href="#"><img src="img/logo-2.png" alt="b"></a>
+        <a href="#"><img src="img/logo-3.png" alt="c"></a>
+        <a href="#"><img src="img/logo-4.png" alt="d"></a>
+      </div>
+      <div class="footer-line"></div>
+    </div>
+  </main>
+  <footer>
+    <div class="map"></div>
+    <div class="contacts">
+      <b>NЁRDS DESIGN STUDIO</b>
+      <p>191186, Санкт-Петербург,</br> ул. Б. Конюшенная, д. 19/8</p>
+      <a href="+78122757575" class="tel">тел. +7 (812) 275-75-75</a>
+      <a href="#" class="write-us">Напишите нам</a>
+    </div>
+    <div class="wrapper clearfix">
+      <section class="social">
+        <a href="#" class="social-btn vk">vk</a>
+        <a href="#" class="social-btn fb">facebook</a>
+        <a href="#" class="social-btn insta">instagram</a>
+      </section>
+      <section class="discount clearfix">
+        <b>Давайте дружить, это выгодно!</b>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </section>
+    </div>
+  </footer>
+  <div class="write-us-popup">
+    <label>
+            <b class="heading">Ваше имя:</b>
+        <input type="text" name="name" value="Представьтесь, пожалуйста">
+          </label>
+    <label>
+            <b class="heading">Ваш e-mail:</b>
+        <input type="text" name="e-mail" value="Для отправки ответа">
+        </label>
+    <label>
+            <b class="heading">Текст письма:</b>
+        <textarea name="letter-text" rows="10" cols="30">В свободной форме</textarea>
+          </label>
+    <button type="submit" class="heading">Отправить</button>
+  </div>
+</body>
+
 </html>
