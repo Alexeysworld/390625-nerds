@@ -13,15 +13,13 @@
   <header class="main-header">
     <div class="wrapper clearfix">
       <span class="main-logo"><img src="img/index-logo.png" alt="log"></span>
+            <div class="user-block"><a href="#" class="cart">Корзина</a></div>
       <nav class="main-menu">
         <ul>
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
-        </ul>
-        <ul>
-          <li><a href="#" class="cart">Корзина</a></li>
         </ul>
       </nav>
     </div>
@@ -39,22 +37,22 @@
       <div class="slides">
         <div class="slide">
           <div class="slide-text">
-            <div class="slide-title">Долго, дорого, скрупулезно</div>
+            <div class="slide-title">Долго, дорого, скрупулезно.</div>
             <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
             <a class="btn" href="#">Узнать больше</a>
           </div>
         </div>
         <div class="slide">
           <div class="slide-text">
-            <div class="slide-title">Любим математику как никто другой</div>
-            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
+            <div class="slide-title">Любим математику<br> как никто другой</div>
+            <p>Никакого креатива, только математические формулы<br> для расчета идеальных пропорций</p>
             <a class="btn" href="#">Узнать больше</a>
           </div>
         </div>
         <div class="slide">
           <div class="slide-text">
-            <div class="slide-title">Только ночь, только хардкор</div>
-            <p>Работаем днем, как все? Мы против этого. Ближе к полуночи работа только начинается</p>
+            <div class="slide-title">Только ночь,<br> только хардкор</div>
+            <p>Работаем днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается</p>
             <a class="btn" href="#">Узнать больше</a>
           </div>
         </div>
@@ -128,7 +126,7 @@
     <div class="map"></div>
     <div class="contacts">
       <b>NЁRDS DESIGN STUDIO</b>
-      <p>191186, Санкт-Петербург,</br> ул. Б. Конюшенная, д. 19/8</p>
+      <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
       <a href="+78122757575" class="tel">тел. +7 (812) 275-75-75</a>
       <a href="#" class="write-us">Напишите нам</a>
     </div>
@@ -144,21 +142,26 @@
       </section>
     </div>
   </footer>
-  <div class="write-us-popup">
-    <label>
-            <b class="heading">Ваше имя:</b>
-        <input type="text" name="name" value="Представьтесь, пожалуйста">
-          </label>
-    <label>
-            <b class="heading">Ваш e-mail:</b>
-        <input type="text" name="e-mail" value="Для отправки ответа">
-        </label>
-    <label>
-            <b class="heading">Текст письма:</b>
-        <textarea name="letter-text" rows="10" cols="30">В свободной форме</textarea>
-          </label>
-    <button type="submit" class="heading">Отправить</button>
-  </div>
+<div class="modal-content" >
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+			<h2 class="modal-content-title">Напишите нам</h2>
+			<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+			<div class="clearfix">
+				<div class="left">
+					<label for="name">Ваше имя:</label>
+					<input class="form-text" type="text" name="login" id="name" placeholder="Представьтесь, пожалуйста">
+				</div>
+				<div class="right">
+					<label for="email">Ваше e-mail:</label>
+        	<input class="form-text" type="email"  name="email" id="email" placeholder="Для отправки ответа">
+				</div>
+				<label for="text">Текст письма:</label>
+				<textarea id="text" rows="1" cols="1" placeholder="В свободной форме"></textarea>
+				</div>
+				<button class="submit-modal-content" type="submit">Отправить</button>
+			</form>
+    </div>
+    	<script src="js/popup.js"></script>
 </body>
 
 </html>

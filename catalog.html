@@ -10,25 +10,23 @@
 </head>
 
 <body>
-  <form action="form.php" method="GET">
-    <header class="main-header">
-      <div class="wrapper clearfix">
-        <span class="main-logo"><img src="img/index-logo.png" alt="log"></span>
-        <nav class="main-menu">
-          <ul>
-            <li><a href="#">Студия</a></li>
-            <li><a href="#">Клиенты</a></li>
-            <li><a href="catalog.html">Магазин</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
-          <ul>
-            <li><a href="#" class="cart">Корзина</a></li>
-          </ul>
-        </nav>
-        <h1 class="main-name">Магазин готовых шаблонов</h1>
-      </div>
-    </header>
-    <main class="catalog-page clearfix">
+  <header class="main-header">
+    <div class="wrapper clearfix">
+      <span class="main-logo"><img src="img/index-logo.png" alt="log"></span>
+      <div class="user-block"><a href="#" class="cart">Корзина</a></div>
+      <nav class="main-menu">
+        <ul>
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a class="active" href="catalog.html">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <h1 class="main-name">Магазин готовых шаблонов</h1>
+    </div>
+  </header>
+  <main class="catalog-page clearfix">
+    <form action="form.php" method="get">
       <div class="filter">
         <fieldset class="range-filter">
           <legend class="heading">Стоимость:</legend>
@@ -69,106 +67,125 @@
         </fieldset>
         <button type="submit">Показать</button>
       </div>
-      <div class="content">
-        <div class="sorting">
-          <b class="heading">Сортировать:</b>
-          <a class="checked" href="#">По цене</a>
-          <a href="#">По типу</a>
-          <a href="#">По названию</a>
-          <a href="#" class="down-btn"></a>
-          <a href="#" class="up-btn"></a>
-        </div>
-        <div class="item-catalog">
-          <article class="item-card">
-            <img src="img/sedona.jpg" width="360" height="616" alt="селфи палка-1">
-            <div class="item-name">
-              <a href="#">
-                <h2 class="heading">Sedona</h2>
-              </a>
-              <p>Информационный сайт для туристов</p>
-              <button class="price" type="submit">9 900 Руб.</button>
-            </div>
-          </article>
-          <article class="item-card">
-            <img src="img/pink.jpg" width="360" height="616" alt="селфи палка-1">
-            <div class="item-name">
-              <a href="#">
-                <h2 class="heading">Sedona</h2>
-              </a>
-              <p>Информационный сайт для туристов</p>
-              <button class="price" type="submit">9 900 Руб.</button>
-            </div>
-          </article>
-          <article class="item-card">
-            <img src="img/barbershop.jpg" width="360" height="616" alt="селфи палка-1">
-            <div class="item-name">
-              <a href="#">
-                <h2 class="heading">Sedona</h2>
-              </a>
-              <p>Информационный сайт для туристов</p>
-              <button class="price" type="submit">9 900 Руб.</button>
-            </div>
-          </article>
-          <article class="item-card">
-            <img src="img/mishka.jpg" width="360" height="616" alt="селфи палка-1">
-            <div class="item-name">
-              <a href="#">
-                <h2 class="heading">Sedona</h2>
-              </a>
-              <p>Информационный сайт для туристов</p>
-              <button class="price" type="submit">9 900 Руб.</button>
-            </div>
-          </article>
-          <article class="item-card">
-            <img src="img/aplus.jpg" width="360" height="616" alt="селфи палка-1">
-            <div class="item-name">
-              <a href="#">
-                <h2 class="heading">Sedona</h2>
-              </a>
-              <p>Информационный сайт для туристов</p>
-              <button class="price" type="submit">9 900 Руб.</button>
-            </div>
-          </article>
-          <article class="item-card">
-            <img src="img/kvast.jpg" width="360" height="616" alt="селфи палка-1">
-            <div class="item-name">
-              <a href="#">
-                <h2 class="heading">Sedona</h2>
-              </a>
-              <p>Информационный сайт для туристов</p>
-              <button class="price" type="submit">9 900 Руб.</button>
-            </div>
-          </article>
-        </div>
-        <div class="paginator">
-          <a class="select">1</a>
-          <a href="#2">2</a>
-          <a href="#3">3</a>
-          <a class="next" href="#next">Следующая</a>
-        </div>
+    </form>
+    <div class="content">
+      <div class="sorting">
+        <b class="heading">Сортировать:</b>
+        <a class="checked" href="#">По цене</a>
+        <a href="#">По типу</a>
+        <a href="#">По названию</a>
+        <a href="#" class="down-btn"></a>
+        <a href="#" class="up-btn"></a>
       </div>
-    </main>
-    <footer>
-      <div class="map"></div>
-      <div class="contacts">
-        <b>NЁRDS DESIGN STUDIO</b>
-        <p>191186, Санкт-Петербург,</br> ул. Б. Конюшенная, д. 19/8</p>
-        <a href="+78122757575" class="tel">тел. +7 (812) 275-75-75</a>
-        <a href="#" class="write-us">Напишите нам</a>
+      <div class="item-catalog">
+        <article class="item-card">
+          <img src="img/sedona.jpg" width="360" height="616" alt="селфи палка-1">
+          <div class="item-name">
+            <a href="#">
+              <h2 class="heading">Sedona</h2>
+            </a>
+            <p>Информационный сайт для туристов</p>
+            <button class="price" type="submit">9 900 Руб.</button>
+          </div>
+        </article>
+        <article class="item-card">
+          <img src="img/pink.jpg" width="360" height="616" alt="селфи палка-1">
+          <div class="item-name">
+            <a href="#">
+              <h2 class="heading">Sedona</h2>
+            </a>
+            <p>Информационный сайт для туристов</p>
+            <button class="price" type="submit">9 900 Руб.</button>
+          </div>
+        </article>
+        <article class="item-card">
+          <img src="img/barbershop.jpg" width="360" height="616" alt="селфи палка-1">
+          <div class="item-name">
+            <a href="#">
+              <h2 class="heading">Sedona</h2>
+            </a>
+            <p>Информационный сайт для туристов</p>
+            <button class="price" type="submit">9 900 Руб.</button>
+          </div>
+        </article>
+        <article class="item-card">
+          <img src="img/mishka.jpg" width="360" height="616" alt="селфи палка-1">
+          <div class="item-name">
+            <a href="#">
+              <h2 class="heading">Sedona</h2>
+            </a>
+            <p>Информационный сайт для туристов</p>
+            <button class="price" type="submit">9 900 Руб.</button>
+          </div>
+        </article>
+        <article class="item-card">
+          <img src="img/aplus.jpg" width="360" height="616" alt="селфи палка-1">
+          <div class="item-name">
+            <a href="#">
+              <h2 class="heading">Sedona</h2>
+            </a>
+            <p>Информационный сайт для туристов</p>
+            <button class="price" type="submit">9 900 Руб.</button>
+          </div>
+        </article>
+        <article class="item-card">
+          <img src="img/kvast.jpg" width="360" height="616" alt="селфи палка-1">
+          <div class="item-name">
+            <a href="#">
+              <h2 class="heading">Sedona</h2>
+            </a>
+            <p>Информационный сайт для туристов</p>
+            <button class="price" type="submit">9 900 Руб.</button>
+          </div>
+        </article>
       </div>
-      <div class="wrapper clearfix">
-        <section class="social">
-          <a href="#" class="social-btn vk">vk</a>
-          <a href="#" class="social-btn fb">facebook</a>
-          <a href="#" class="social-btn insta">instagram</a>
-        </section>
-        <section class="discount clearfix">
-          <b>Давайте дружить, это выгодно!</b>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
-        </section>
+      <div class="paginator">
+        <a class="select">1</a>
+        <a href="#2">2</a>
+        <a href="#3">3</a>
+        <a class="next" href="#next">Следующая</a>
       </div>
-    </footer>
-  </form>
+    </div>
+  </main>
+  <footer>
+    <div class="map"></div>
+    <div class="contacts">
+      <b>NЁRDS DESIGN STUDIO</b>
+      <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+      <a href="+78122757575" class="tel">тел. +7 (812) 275-75-75</a>
+      <a href="#" class="write-us">Напишите нам</a>
+    </div>
+    <div class="wrapper clearfix">
+      <section class="social">
+        <a href="#" class="social-btn vk">vk</a>
+        <a href="#" class="social-btn fb">facebook</a>
+        <a href="#" class="social-btn insta">instagram</a>
+      </section>
+      <section class="discount clearfix">
+        <b>Давайте дружить, это выгодно!</b>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </section>
+    </div>
+  </footer>
+  <div class="modal-content">
+    <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+    <h2 class="modal-content-title">Напишите нам</h2>
+    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="clearfix">
+        <div class="left">
+          <label for="name">Ваше имя:</label>
+          <input class="form-text" type="text" name="login" id="name" placeholder="Представьтесь, пожалуйста">
+        </div>
+        <div class="right">
+          <label for="email">Ваше e-mail:</label>
+          <input class="form-text" type="email" name="email" id="email" placeholder="Для отправки ответа">
+        </div>
+        <textarea rows="1" cols="1" placeholder="В свободной форме"></textarea>
+      </div>
+      <button class="submit-modal-content" type="submit">Отправить</button>
+    </form>
+  </div>
+  <script src="js/popup.js"></script>
 </body>
 
 </html>

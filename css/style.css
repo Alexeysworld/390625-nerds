@@ -1,7 +1,7 @@
       body {
         margin: 0;
         padding: 0;
-        min-width: 1160px;
+        width: 1160px;
         font-weight: 400;
         font-size: 14px;
         line-height: 24px;
@@ -54,15 +54,23 @@
     }
     .main-header nav {
       float: right;
-      width: 800px;
+      width: 600px;
       font-size: 0;
+      margin-right: 65px;
     }
+    .main-header .active {
+      position: relative;
+      border-bottom: 2px solid red;
+      padding-bottom: 10px;
+    }
+
     .main-header li {
       display: inline-block;
       vertical-align: top;
       margin-right: 46px;
       font-size: 16px;
       line-height: 30px;
+      height: 37px;
     }
     .main-header a {
       text-decoration: none;
@@ -74,15 +82,22 @@
     .main-header a:active {
       color: rgba(0, 0, 0, 0.3);
     }
-    .cart {
-      padding-left: 45px;
-      margin-left: 150px;
+    .user-block {
+      float: right;
+      width: 120px;
+      margin-top: 26px;
+      padding-left: 15px;
+      font-size: 16px;
+      line-height: 30px;
       position: relative;
+      font-weight: 500;
+      text-align: right;
+      text-transform: uppercase;
     }
     .cart::before {
       content: "";
       position: absolute;
-      top: 0px;
+      top: 7px;
       left: 20px;
       height: 18px;
       width: 18px;
@@ -92,9 +107,10 @@
     .slider {
       position: relative;
       width: 1160px;
-      height: 430px;
+      height: 425px;
       margin: 0 auto;
       margin-bottom: 80px;
+      background-color: #eee;
     }
     .slider input[type=radio] {
       position: absolute;
@@ -103,7 +119,7 @@
     .slider-controls {
       position: absolute;
       bottom: 95px;
-      left: 50%;
+      left: 52.2%;
       width: 200px;
       height: 20px;
       margin-left: -100px;
@@ -112,11 +128,10 @@
     }
     .slider-controls label {
       display: inline-block;
-      width: 4px;
-      height: 4px;
-      margin: 0 3px;
+      width: 20px;
+      height: 20px;
+      margin-right: 12px;
       background: white;
-      border: 3px solid white;
       vertical-align: top;
       border-radius: 50%;
       cursor: pointer;
@@ -124,7 +139,10 @@
     #btn-1:checked~.slider-controls label[for="btn-1"],
     #btn-2:checked~.slider-controls label[for="btn-2"],
     #btn-3:checked~.slider-controls label[for="btn-3"] {
-      background: #c1c1c1;
+      background-image: url(../img/circle.svg);
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-size: 8px 8px;
     }
     .slide {
       position: absolute;
@@ -135,7 +153,7 @@
       overflow: hidden;
     }
     .slide-text {
-      width: 460px;
+      width: 560px;
       padding: 45px 0;
       padding-left: 20px;
       font-size: 16px;
@@ -144,11 +162,11 @@
       color: #283136;
     }
     .slide-title {
-      margin-top: 30px;
+      margin-top: 25px;
       font-size: 55px;
       line-height: 55px;
       font-weight: 700;
-      margin-bottom: 25px;
+      margin-bottom: 27px;
       color: #000;
     }
     .slide .btn {
@@ -168,17 +186,17 @@
     .slide:nth-child(1) {
       background-image: url("../img/slide1.png");
       background-repeat: no-repeat;
-      background-position: 100% 17px;
+      background-position: 97.5% 11px;
     }
     .slide:nth-child(2) {
       background-image: url("../img/slide2.png");
       background-repeat: no-repeat;
-      background-position: 100% 10px;
+      background-position: 104% -5px;
     }
     .slide:nth-child(3) {
       background-image: url("../img/slide3.png");
       background-repeat: no-repeat;
-      background-position: 100% 0;
+      background-position: 105% 11px;
     }
     .slide {
       display: none;
@@ -935,3 +953,132 @@
       background-color: #d5d5d5;
       box-shadow: inset 0 2px 3px rgba(0, 1, 1, 0.1);
       color: #959595;
+}
+.modal-content {
+  position: fixed;
+  top: 10%;
+  left: 10%;
+
+  width: 760px;
+  padding: 65px 100px;
+  color: #000;
+  display: none;
+
+  background-color: #fff;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  z-index: 2000;
+}
+
+.modal-content-show {
+  display: block;
+}
+
+.modal-content-close {
+  position: absolute;
+  top: 76px;
+  right: 88px;
+
+  width: 22px;
+  height: 22px;
+
+  font-size: 0;
+
+  background: transparent url("../img/sprite.png") no-repeat;
+  background-position: -25px -236px;
+  opacity: 0.3;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal-content-close:hover {
+  opacity: 1;
+}
+
+.modal-content-close:active {
+  opacity: 0.1;
+}
+
+.modal-content-title {
+  font-family: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 45px;
+  line-height: 45px;
+  color: #000;
+  margin-bottom: 35px;
+}
+
+.modal-content label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.left {
+  display: inline-block;
+  width: 360px;
+  margin-bottom: 35px;
+  margin-right: 32px;
+}
+
+
+.right {
+  display: inline-block;
+  width: 360px;
+  margin-bottom: 35px;
+}
+
+
+.modal-content form {
+  margin: 0;
+  padding: 0;
+  width: 760px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="email"] {
+  width: 332px;
+  padding: 14px 12px;
+  margin: 0;
+  border: 2px solid #d7dcde;
+  border-radius: 3px;
+
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444;
+}
+
+
+textarea {
+  display: block;
+  width: 725px;
+  height: 114px;
+  margin: 0;
+  padding: 14px 12px;
+
+
+  border: 2px solid #d7dcde;
+  border-radius: 3px;
+
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444;
+}
+
+.modal-content .submit-modal-content {
+  width: 220px;
+  padding: 16px 0;
+  text-align: center;
+  background-color: #fb565a;
+  margin-top: 48px;
+  border-radius: 2px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+}
