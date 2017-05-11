@@ -3,7 +3,7 @@
         padding: 0;
         width: 1160px;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 24px;
         font-family: "Roboto", "Arial", sans-serif;
       }
@@ -230,14 +230,14 @@
     .service-item p {
       font-family: inherit;
       font-size: 16px;
-      line-height: 25px;
+      line-height: 24px;
       color: #283136;
-      margin-bottom: 25px;
+      margin-bottom: 30px;
     }
     .service-btn {
       display: inline-block;
       width: 160px;
-      padding: 18px 0;
+      padding: 16px 0;
       border-radius: 3px;
       text-align: center;
       font-size: 16px;
@@ -258,7 +258,6 @@
     .red:active {
       background-color: #d7373b;
       color: #e37376;
-      box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.1);
     }
     .green {
       background-color: #00ca74;
@@ -269,7 +268,6 @@
     .green:active {
       background-color: #00aa62;
       color: #4dc491;
-      box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.1);
     }
     .yellow {
       background-color: #efc84a;
@@ -279,15 +277,13 @@
     }
     .yellow:active {
       background-color: #e5a722;
-      ;
       color: #edc265;
-      box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.1);
     }
     /*-------------------------- О нас ------------------------*/
     .about-line {
       width: 1160px;
       height: 2px;
-      margin-top: 80px;
+      margin-top: 82px;
       background-color: #eee;
     }
     .left-column {
@@ -345,7 +341,7 @@
     .right-column {
       float: right;
       width: 360px;
-      padding-top: 245px;
+      padding-top: 242px;
       margin-top: 40px;
       background-image: url("../img/logo.jpg");
       background-repeat: no-repeat;
@@ -357,17 +353,17 @@
       text-transform: uppercase;
       color: #000;
       margin-bottom: 40px;
-      padding-left: 13px;
+      padding-left: 15px;
     }
     .percent-block-item {
       display: inline-block;
       width: 115px;
       height: 95px;
-      margin-top: 45px;
+      margin-top: 47px;
     }
     .number {
       display: inline-block;
-      margin-bottom: 15px;
+      margin-bottom: 17px;
       font-size: 45px;
       line-height: 35px;
       font-weight: 700;
@@ -425,12 +421,13 @@
       background-repeat: no-repeat;
       background-position: 61% 39%;
     }
-    footer {
+    footer .wrapper {
       position: relative;
     }
     .contacts {
+      /*top 54 left 20*/
       position: absolute;
-      top: 54px;
+      bottom: 53px;
       left: 20px;
       width: 219px;
       padding: 50px;
@@ -887,7 +884,7 @@
     }
     input[type="checkbox"]+label {
       display: block;
-      margin-top: 18px;
+      margin-top: 17px;
       margin-bottom: 15px;
       padding-top: 1px;
       padding-left: 37px;
@@ -954,13 +951,17 @@
       box-shadow: inset 0 2px 3px rgba(0, 1, 1, 0.1);
       color: #959595;
 }
+/*-------------------- Модальное окно --------------------*/
 .modal-content {
   position: fixed;
   top: 10%;
-  left: 10%;
+  left: 9.4%;
 
   width: 760px;
-  padding: 65px 100px;
+  padding-top: 67px;
+  padding-bottom: 84px;
+  padding-left: 99px;
+  padding-right: 100px;
   color: #000;
   display: none;
 
@@ -1002,10 +1003,11 @@
   font-family: inherit;
   margin: 0;
   padding: 0;
+  margin-top: 2px;
   font-size: 45px;
   line-height: 45px;
   color: #000;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 }
 
 .modal-content label {
@@ -1017,15 +1019,15 @@
 .left {
   display: inline-block;
   width: 360px;
-  margin-bottom: 35px;
-  margin-right: 32px;
+  margin-bottom: 32px;
+  margin-right: 35px;
 }
 
 
 .right {
   display: inline-block;
   width: 360px;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
 }
 
 
@@ -1040,6 +1042,7 @@
   width: 332px;
   padding: 14px 12px;
   margin: 0;
+  margin-top: 5px;
   border: 2px solid #d7dcde;
   border-radius: 3px;
 
@@ -1052,11 +1055,12 @@
 
 textarea {
   display: block;
-  width: 725px;
-  height: 114px;
+  width: 730px;
+  height: 85px;
   margin: 0;
   padding: 14px 12px;
-
+margin-top:
+  5px;
 
   border: 2px solid #d7dcde;
   border-radius: 3px;
@@ -1068,11 +1072,12 @@ textarea {
 }
 
 .modal-content .submit-modal-content {
-  width: 220px;
+  width: 260px;
   padding: 16px 0;
   text-align: center;
   background-color: #fb565a;
   margin-top: 48px;
+  border: none;
   border-radius: 2px;
   font-family: inherit;
   font-size: 16px;
