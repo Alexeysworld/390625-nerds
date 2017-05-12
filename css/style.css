@@ -39,12 +39,12 @@
       float: left;
       width: 160px;
       height: 65px;
-      margin-top: 210px;
     }
 
     .main-header {
       max-height: 545px;
       padding-top: 49px;
+      padding-bottom: 10px;
       color: #000;
       background-color: #eee;
     }
@@ -126,7 +126,7 @@
     .slider {
       position: relative;
       height: 425px;
-      margin-bottom: 80px;
+      margin-bottom: 78px;
       background-color: #eee;
     }
 
@@ -137,8 +137,8 @@
 
     .slider-controls {
       position: absolute;
-      bottom: 95px;
-      left: 52.2%;
+      bottom: 96px;
+      left: 50.5%;
       width: 200px;
       height: 20px;
       margin-left: -100px;
@@ -211,19 +211,19 @@
     .slide:nth-child(1) {
       background-image: url("../img/slide1.png");
       background-repeat: no-repeat;
-      background-position: 97.5% 11px;
+      background-position: 94% 11px;
     }
 
     .slide:nth-child(2) {
       background-image: url("../img/slide2.png");
       background-repeat: no-repeat;
-      background-position: 104% -5px;
+      background-position: 100% -5px;
     }
 
     .slide:nth-child(3) {
       background-image: url("../img/slide3.png");
       background-repeat: no-repeat;
-      background-position: 105% 11px;
+      background-position: 100% 11px;
     }
 
     .slide {
