@@ -588,7 +588,6 @@
     .filter {
       float: left;
       width: 260px;
-      padding-left: 20px;
       margin-top: 57px;
     }
     .content {
@@ -598,7 +597,7 @@
     .item-catalog {
       font-size: 0px;
       width: 760px;
-      margin-left: 20px;
+      margin-left: 0px;
     }
     .item-card {
       display: inline-block;
@@ -682,7 +681,6 @@
     }
     .paginator {
       font-size: 0;
-      margin-left: 20px;
     }
     .paginator a {
       display: inline-block;
@@ -730,7 +728,6 @@
       font-size: 0px;
       width: 800px;
       height: 30px;
-      padding-left: 20px;
       margin-top: 53px;
       margin-bottom: 52px;
     }
