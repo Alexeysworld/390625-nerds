@@ -44,7 +44,7 @@
     .main-header {
       max-height: 545px;
       padding-top: 49px;
-      padding-bottom: 10px;
+         padding-bottom: 10px;
       color: #000;
       background-color: #eee;
     }
@@ -663,15 +663,18 @@
     /*--------------------- Каталог -------------------------*/
 
     .main-name {
-      padding-top: 50px;
+      padding-top: 160px;
       padding-left: 215px;
-      padding-bottom: 85px;
+      padding-bottom: 75px;
       font-size: 55px;
       font-weight: 700;
       line-height: 25px;
       color: #000;
       background-color: #eee;
     }
+.catalog-header {
+  padding-top: 10px;
+}
 
     fieldset {
       padding: 0;
