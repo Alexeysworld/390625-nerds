@@ -651,11 +651,15 @@
     .item-name p {
       margin: 0;
       padding: 0;
+      padding-left: 20px;
+      padding-right: 20px;
       font-size: 16px;
       line-height: 18px;
       color: #666;
       text-align: center;
       margin-bottom: 45px;
+      background-color: aqua;
+      word-wrap: break-word;
     }
     .price {
       display: inline-block;
