@@ -22,6 +22,7 @@
 
     .heading {
       display: inline-block;
+      vertical-align: top;
       font-size: 18px;
       line-height: 30px;
       text-transform: uppercase;
@@ -39,12 +40,21 @@
       float: left;
       width: 160px;
       height: 65px;
+      cursor: pointer;
+    }
+
+    .main-logo:hover {
+      opacity: 0.9;
+    }
+
+    .main-logo:active {
+      opacity: 0.5;
     }
 
     .main-header {
       max-height: 545px;
       padding-top: 49px;
-         padding-bottom: 10px;
+      padding-bottom: 10px;
       color: #000;
       background-color: #eee;
     }
@@ -125,7 +135,7 @@
 
     .slider {
       position: relative;
-      height: 425px;
+      min-height: 425px;
       margin-bottom: 78px;
       background-color: #eee;
     }
@@ -171,7 +181,7 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 100%;
+      min-height: 100%;
       overflow: hidden;
     }
 
@@ -182,6 +192,10 @@
       line-height: 24px;
       font-weight: 500;
       color: #283136;
+    }
+
+    .slide-text p {
+      word-wrap: break-word;
     }
 
     .slide-title {
@@ -206,6 +220,15 @@
       text-decoration: none;
       background: #fb565a;
       border-radius: 3px;
+    }
+
+    .slide .btn:hover {
+      background-color: #e74246;
+    }
+
+    .slide .btn:active {
+      color: #e37376;
+      box-shadow: inset 0 3px 0 0 rgba(0, 0, 1, 0.1);
     }
 
     .slide:nth-child(1) {
@@ -380,6 +403,7 @@
     .left-column li::before {
       content: "";
       display: inline-block;
+      vertical-align: top;
       position: absolute;
       top: 11px;
       left: 0px;
@@ -413,6 +437,7 @@
 
     .percent-block-item {
       display: inline-block;
+      vertical-align: top;
       width: 115px;
       height: 95px;
       margin-top: 47px;
@@ -420,6 +445,7 @@
 
     .number {
       display: inline-block;
+      vertical-align: baseline;
       margin-bottom: 17px;
       font-size: 45px;
       line-height: 35px;
@@ -507,6 +533,8 @@
     }
     /*----------------------- Подвал ------------------------*/
 
+    .footer {}
+
     .map {
       height: 420px;
       background-image: url("../img/map-marker-bg.png");
@@ -516,6 +544,11 @@
 
     footer .wrapper {
       position: relative;
+    }
+
+    footer .wrapper:last-child {
+      margin-top: 5px;
+      height: 216px;
     }
 
     .contacts {
@@ -532,6 +565,7 @@
 
     .contacts b {
       display: inline-block;
+      vertical-align: top;
       font-size: 18px;
       line-height: 30px;
       font-family: "Roboto" sans-serif;
@@ -567,7 +601,7 @@
     .discount {
       float: right;
       width: 760px;
-      margin-top: 70px;
+      margin-top: 65px;
     }
 
     .discount b {
@@ -672,9 +706,10 @@
       color: #000;
       background-color: #eee;
     }
-.catalog-header {
-  padding-top: 10px;
-}
+
+    .catalog-header {
+      padding-top: 10px;
+    }
 
     fieldset {
       padding: 0;
@@ -770,6 +805,7 @@
 
     .price {
       display: inline-block;
+      vertical-align: top;
       width: 200px;
       margin-left: 80px;
       margin-bottom: 43px;
@@ -815,6 +851,7 @@
       text-decoration: none;
       text-align: center;
       cursor: pointer;
+      word-wrap: break-word;
     }
 
     .paginator a:hover {
@@ -861,6 +898,7 @@
 
     .sorting a {
       display: inline-block;
+      vertical-align: top;
       margin-top: 7px;
       margin-right: 26px;
       font-size: 14px;
@@ -878,6 +916,11 @@
 
     .sorting a:nth-child(5) {
       margin-right: 20px;
+      margin-top: 10px;
+    }
+
+    .sorting a:nth-child(6) {
+      margin-top: 10px;
     }
 
     .sorting a:hover {
@@ -898,6 +941,8 @@
 
     .down-btn {
       display: inline-block;
+      vertical-align: top;
+      font-size: 0;
       border-left: 5px solid transparent;
       border-right: 5px solid transparent;
       border-top: 10px solid #000;
@@ -905,10 +950,17 @@
 
     .up-btn {
       display: inline-block;
+      vertical-align: top;
+      font-size: 0;
       border-left: 5px solid transparent;
       border-right: 5px solid transparent;
       border-bottom: 10px solid black;
       opacity: 0.4;
+    }
+
+    .up-btn span,
+    .down-btn span {
+      display: none;
     }
 
     .down-btn a:hover,
@@ -943,12 +995,13 @@
     }
 
     .range-controls .scale {
+      width: 100%;
       height: 2px;
       background: #d7dcde;
     }
 
     .range-controls .bar {
-      width: 10%;
+      width: 70%;
       height: 2px;
       background: #00ca74;
     }
@@ -981,6 +1034,7 @@
     .price-controls label {
       font-size: 16px;
       display: inline-block;
+      vertical-align: top;
       width: 50%;
     }
 
@@ -989,7 +1043,7 @@
     }
 
     .price-controls input {
-      font-family: 'Roboto', 'Arial', sans-serif;
+      font-family: "Roboto", "Arial", sans-serif;
       font-size: 16px;
       width: 60px;
       margin-left: 10px;
@@ -1020,6 +1074,11 @@
       color: #283136;
       position: relative;
       cursor: pointer;
+    }
+
+    .blocked+label {
+      opacity: 0.3;
+      cursor: default;
     }
 
     input[type="radio"]+label:hover {
@@ -1205,6 +1264,7 @@
 
     .left {
       display: inline-block;
+      vertical-align: top;
       width: 360px;
       margin-bottom: 32px;
       margin-right: 35px;
@@ -1212,6 +1272,7 @@
 
     .right {
       display: inline-block;
+      vertical-align: top;
       width: 360px;
       margin-bottom: 32px;
     }
